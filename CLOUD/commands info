@@ -1,0 +1,9 @@
+commands:
+locate -----> sudo yum install mlocate -y
+If the directory is new (mkdir file), you have to update the database: (sudo updatedb) and then run your locate command again (locate filename)
+
+find -------> find . -name <filename>
+
+find vs locate:
+locate simply looks its database and reports the file location. find does not use a database, it traverses all the directories and their sub directories and looks for files matching the given criterion.
+
